@@ -100,7 +100,7 @@ public class Main {
 		Area area2 = new Area(region2);
 
 		area1.intersect(area2);
-		if (area1.isEmpty()) {
+		if (!area1.isEmpty()) {
 			System.out.println("area1 intersects area2");
 			ret = true;
 		}
