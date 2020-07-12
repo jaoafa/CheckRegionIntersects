@@ -1,6 +1,7 @@
 package com.jaoafa.CheckRegionIntersects;
 
 import java.awt.Polygon;
+import java.awt.geom.Area;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -73,23 +74,34 @@ public class Main {
 		Polygon region2 = getPolygonFromJSON(json2);
 
 		boolean ret = false;
+		/*
 		if (region1.intersects(region2.getBounds2D())) {
 			System.out.println("region1 intersects region2.");
 			ret = true;
 		}
-
+		
 		if (region1.contains(region2.getBounds2D())) {
 			System.out.println("region1 contains region2.");
 			ret = true;
 		}
-
+		
 		if (region2.intersects(region1.getBounds2D())) {
 			System.out.println("region2 intersects region1.");
 			ret = true;
 		}
-
+		
 		if (region2.contains(region1.getBounds2D())) {
 			System.out.println("region2 contains region1.");
+			ret = true;
+		}
+		*/
+
+		Area area1 = new Area(region1);
+		Area area2 = new Area(region2);
+
+		area1.intersect(area2);
+		if (area1.isEmpty()) {
+			System.out.println("area1 intersects area2");
 			ret = true;
 		}
 
