@@ -1,6 +1,6 @@
 # CheckRegionIntersects
 
-![Java CI with Maven](https://github.com/jaoafa/MyMaid3/workflows/Java%20CI%20with%20Maven/badge.svg)
+![Java CI with Maven](https://github.com/jaoafa/CheckRegionIntersects/workflows/Java%20CI%20with%20Maven/badge.svg)
 ![Support jdk](https://img.shields.io/badge/Support%20jdk-oraclejdk8-red.svg)
 ![Author](https://img.shields.io/badge/Author%20MinecraftID-mine__book000-orange.svg)
 [![License](https://img.shields.io/github/license/jaoafa/CheckRegionIntersects)](https://github.com/jaoafa/CheckRegionIntersects/blob/master/LICENSE)
